@@ -1,7 +1,7 @@
-import { getVersion } from "@imput/version-info";
+// import { getVersion } from "@imput/version-info";
 import { loadEnvs, validateEnvs } from "./core/env.js";
 
-const version = await getVersion();
+const version = "11.7.1";
 
 const canonicalEnv = Object.freeze(structuredClone(process.env));
 const env = loadEnvs();
